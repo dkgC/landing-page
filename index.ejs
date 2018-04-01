@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="http://www.sovacapital.com/" />
+  <meta property="og:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/fb_share.png") %>" />
+  <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>" />
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>">
+  <meta name="twitter:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/twitter_share.png") %>">
+
+  <!-- VK, Google+ and others -->
+  <meta itemprop="name" content="<%= htmlWebpackPlugin.options.title %>"/>
+  <meta itemprop="description" content="<%= htmlWebpackPlugin.options.description %>"/>
+  <meta itemprop="image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/generic_share.png") %>"/>
+
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+  <link rel="shortcut icon" type="image/png" href="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/favicon.png") %>" />
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div class="wrapper d-md-flex flex-md-column">
+  <header class="header flex justify-content-start">
+    <img class="logo ml-2 ml-md-4" alt="sova logo" src=<%= require("./assets/images/logo.svg") %>>
+  </header>
+  <main class="content row px-md-5 mx-md-1">
+    <div class="col-12 col-md-8 px-5 px-md-1 mt-md-5 pt-lg-5">
+      <h1 class="h2 title text-grey mb-md-5 pb-md-3">Clear vision,<br>focused finance</h1>
+
+      <!-- START: Accordion section -->
+      <ul class="info-sections list-group f-light d-md-none">
+        <li>
+          <button class="collapse-button btn btn-link w-100 pl-0 py-3 collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#whoWeAre"
+                  aria-expanded="false"
+                  aria-controls="whoWeAre">
+            <div class="d-flex justify-content-between">
+              <div class="d-inline-block align-self-center btn-text">Who We Are</div>
+              <div class="d-inline-block bubble">
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+              </div>
+            </div>
+            <div class="separator"></div>
+          </button>
+          <div class="collapse small text-gray-dark" id="whoWeAre">
+            SOVA Capital Limited [formerly known as Otkritie Capital International Limited or OCIL]
+            (<a target="_blank" href="//otkritie-capital.com">www.otkritie-capital.com</a>)
+            is a leading independent Russian broker,
+            offering institutional and corporate clients a full range of investment banking services, including
+            independent research, securities trading, prime services, public debt financing and M&A advice. The FCA
+            (the UK regulatory authority) approved the change in control of the firm in December 2017 and the
+            ROSSIUM Group acquired full legal ownership of the firm in January 2018.
+          </div>
+        </li>
+
+        <li>
+          <button class="collapse-button btn btn-link w-100 pl-0 py-3 collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#keyFacts"
+                  aria-expanded="false"
+                  aria-controls="keyFacts">
+            <div class="d-flex justify-content-between">
+              <div class="d-inline-block align-self-center btn-text">Key Facts</div>
+              <div class="d-inline-block bubble">
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+              </div>
+            </div>
+            <div class="separator"></div>
+          </button>
+          <div class="collapse small text-gray-dark" id="keyFacts">
+            <ul class="facts-list p-0">
+              <li>
+                <span class="text-gray-dark">Is authorised and regulated by the FCA since 2004</span>
+              </li>
+              <li>
+                <span class="text-gray-dark">
+                  Is a market maker that allows its clients to engage in trading activities from Moscow and London
+                </span>
+              </li>
+              <li>
+                <span class="text-gray-dark">
+                  Has developed a vast range of counterparties including global banks,
+                  clearing houses and trading venues
+                </span>
+              </li>
+              <li>
+                <span class="text-gray-dark">
+                  Is integrated into global markets having signed framework agreements and has established open
+                  lines with multiple professional clients and eligible counterparties.
+                </span>
+              </li>
+            </ul>
+          </div>
+        </li>
+
+        <li>
+          <button class="collapse-button btn btn-link w-100 pl-0 py-3 collapsed"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#whySova"
+                  aria-expanded="false"
+                  aria-controls="whySova">
+            <div class="d-flex justify-content-between">
+              <div class="d-inline-block align-self-center btn-text">Why SOVA?</div>
+              <div class="d-inline-block bubble">
+                <span class="arrow down"></span>
+                <span class="arrow up"></span>
+              </div>
+            </div>
+            <div class="separator"></div>
+          </button>
+          <div class="collapse small text-gray-dark" id="whySova">
+            <div class="pb-3">
+              The name emphasizes the firm’s goal to provide a full suite of services, covering all angles and points
+              of view, but also remaining focused, strong and stable.
+            </div>
+
+            <ul class="facts-list p-0">
+              <li>
+                <span>Sense</span>
+                <span class="text-gray-dark"> — we understand what it is we do and why</span>
+              </li>
+              <li>
+                <span>Openness</span>
+                <span class="text-gray-dark"> — we provide clarity and are transparent with our processes</span>
+              </li>
+              <li>
+                <span>Vision</span>
+                <span class="text-gray-dark"> — we provide a clear and focused vision</span>
+              </li>
+              <li>
+                <span>Action</span>
+                <span class="text-gray-dark"> — our delivery and performance is timely and effective</span>
+              </li>
+            </ul>
+          </div>
+        </li>
+      </ul>
+      <!-- END: Accordion section -->
+
+      <!-- START: Tabs section -->
+      <div class="d-none d-md-block">
+        <ul class="nav nav-tabs border-bottom-0 small f-semi-bold" role="tablist">
+          <li role="presentation" class="active pr-3">
+            <a href="#whoWeAreTab"
+               class="nav-item nav-link p-0 px-2 active"
+               aria-controls="home"
+               role="tab"
+               data-toggle="tab">Who We Are</a>
+          </li>
+          <li role="presentation" class="px-3">
+            <a href="#keyFactsTab"
+               class="nav-item nav-link p-0 px-2"
+               aria-controls="profile"
+               role="tab"
+               data-toggle="tab">Key Facts</a>
+          </li>
+          <li role="presentation" class="pl-3">
+            <a href="#whySovaTab"
+               class="nav-item nav-link p-0 px-2"
+               aria-controls="messages"
+               role="tab"
+               data-toggle="tab">Why SOVA?</a>
+          </li>
+          <div class="underbar"></div>
+        </ul>
+
+        <div class="tab-content text-gray-dark f-light medium mt-4 w-75">
+          <div role="tabpanel" class="tab-pane active" id="whoWeAreTab">
+            SOVA Capital Limited [formerly known as Otkritie Capital International Limited or OCIL]
+            (<a target="_blank" href="//otkritie-capital.com">www.otkritie-capital.com</a>)
+            is a leading independent Russian broker, offering institutional and corporate clients a full range of
+            investment banking services, including independent research, securities trading, prime services, public
+            debt financing and M&A advice. The FCA (the UK regulatory authority) approved the change in control of
+            the firm in December 2017 and the ROSSIUM Group acquired full legal ownership of the firm in January 2018.
+          </div>
+          <div role="tabpanel" class="tab-pane" id="keyFactsTab">
+            <ul class="facts-list p-0">
+              <li>
+                <span class="text-gray-dark">Is authorised and regulated by the FCA since 2004</span>
+              </li>
+              <li>
+                <span class="text-gray-dark">
+                  Is a market maker that allows its clients to engage in
+                  trading activities from Moscow and London
+                </span>
+              </li>
+              <li>
+                <span class="text-gray-dark">
+                  Has developed a vast range of counterparties including global banks,
+                  clearing houses and trading venues
+                </span>
+              </li>
+              <li>
+                <span class="text-gray-dark">
+                  Is integrated into global markets having signed framework agreements and has established open
+                  lines with multiple professional clients and eligible counterparties.
+                </span>
+              </li>
+            </ul>
+          </div>
+          <div role="tabpanel" class="tab-pane" id="whySovaTab">
+            <div class="pb-3">
+              The name emphasizes the firm’s goal to provide a full suite of services, covering all angles and points
+              of view, but also remaining focused, strong and stable.
+            </div>
+
+            <ul class="facts-list p-0">
+              <li>
+                <span>Sense</span>
+                <span class="text-gray-dark"> — we understand what it is we do and why</span>
+              </li>
+              <li>
+                <span>Openness</span>
+                <span class="text-gray-dark"> — we provide clarity and are transparent with our processes</span>
+              </li>
+              <li>
+                <span>Vision</span>
+                <span class="text-gray-dark"> — we provide a clear and focused vision</span>
+              </li>
+              <li>
+                <span>Action</span>
+                <span class="text-gray-dark"> — our delivery and performance is timely and effective</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- END: Tabs section -->
+    </div>
+
+    <!-- START: Image block -->
+    <img class="image w-100 h-100 d-md-none" alt="building" src=<%= require("./assets/images/image_land.png") %>>
+    <!-- END: Image block -->
+
+    <!-- START: Contact section -->
+    <div class="col-12 col-md-4 text-gray-darker px-5 pr-md-1 pl-md-0">
+      <div class="row">
+        <div class="col-12 col-lg-9 offset-lg-3 h5 my-3 mt-md-0 xsmall f-bold px-md-0">Contact us</div>
+        <div class="col-12 col-lg-9 offset-lg-3 d-flex justify-content-between justify-content-md-start xsmall f-light pl-md-0">
+          <div class="pr-md-4">
+            London Headquarters<br>
+            12th Floor, 88 Wood Street,<br>
+            London, EC2V 7RS, UK<br>
+            Phone: <a class="text-gray-darker" href="tel:+44 (0) 207 8268200">+44 (0) 207 8268200</a>
+          </div>
+          <div>
+            Moscow Headquarters<br>
+            7th floor, 5 Koroviy Val,bld 1,<br>
+            BC Oasis<br>
+            Moscow, 119049<br>
+            Phone: <a class="text-gray-darker" href="tel:+7 (495) 223-23-23">+7 (495) 223-23-23</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END: Contact section -->
+  </main>
+
+  <!-- START: Footer section -->
+  <footer class="footer row px-4 px-md-5 mx-md-1">
+    <div class="col-12 col-md-5 px-4 px-md-1 pb-2 pb-md-4 pt-5 pt-md-0">
+      <a class="contact-email f-semi-bold small" href="mailto:info@sovacapital.com">Email: info@sovacapital.com</a>
+      <div class="disclaimer pt-2 pt-md-3">
+        Unless specifically stated, this notice is for information purposes only and may not be
+        considered as advice, is not an offer, recommendation or solicitation with respect to any transaction or an
+        advertisement, nor is it an official confirmation of terms and does not form a fiduciary relationship.
+        Additional information is available upon request.
+      </div>
+    </div>
+  </footer>
+  <!-- END: Footer section -->
+</div>
+</body>
+</html>
