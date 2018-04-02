@@ -6,22 +6,23 @@
         content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <!-- Open Graph data -->
-  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>" />
-  <meta property="og:type" content="website" />
+  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="og:type" content="website">
   <meta property="og:url" content="http://www.sovacapital.com/" />
-  <meta property="og:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/fb_share.png") %>" />
-  <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>" />
+  <meta property="og:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/fb_share.png") %>">
+  <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
 
   <!-- Twitter Card data -->
-  <meta name="twitter:card" content="summary">
+  <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>">
   <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>">
   <meta name="twitter:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/twitter_share.png") %>">
 
-  <!-- VK, Google+ and others -->
-  <meta itemprop="name" content="<%= htmlWebpackPlugin.options.title %>"/>
-  <meta itemprop="description" content="<%= htmlWebpackPlugin.options.description %>"/>
-  <meta itemprop="image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/generic_share.png") %>"/>
+  <!-- VK data -->
+  <meta property="vk:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="vk:description" content="<%= htmlWebpackPlugin.options.description %>">
+  <meta property="vk:url" content="http://www.sovacapital.com/">
+  <meta property="vk:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("./assets/images/vk_share.png") %>">
 
   <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
   <link rel="shortcut icon" type="image/png" href="<%= require("./assets/images/favicon.png") %>" />
