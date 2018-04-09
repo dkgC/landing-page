@@ -10,7 +10,7 @@ const dirNode = 'node_modules';
 const dirApp = path.join(__dirname, 'app');
 const dirAssets = path.join(__dirname, 'assets');
 
-const WEBSITE = 'http://sova-capital.bitballoon.com/';
+const WEBSITE = 'http://sovacapital.com/';
 const DESCRIPTION = `SOVA Capital Limited is a leading independent Russian broker, offering institutional and 
 corporate clients a full range of investment banking services.`;
 const TITLE = 'SOVA Capital Limited';

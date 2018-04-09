@@ -5,7 +5,7 @@
   "author": "dkg_C",
   "scripts": {
     "dev": "set NODE_ENV=dev&&webpack-dev-server --progress --config webpack.config.dev.js",
-    "build": "set WEBSITE=example.com&&webpack -p --progress --config webpack.config.build.js"
+    "build": "webpack -p --progress --config webpack.config.build.js"
   },
   "browserslist": [
     "last 4 versions"

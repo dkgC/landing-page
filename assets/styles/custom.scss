@@ -28,8 +28,8 @@ body,
   width: 196px;
 }
 
-.title {
-  font-family: "Montserrat Ultra";
+.title img {
+  height: 55px;
 }
 
 .f-hairline {
@@ -298,8 +298,8 @@ a {
     width: 300px;
   }
 
-  .title {
-    font-family: "Montserrat Hairline";
+  .title img {
+    height: 105px;
   }
 
   .h2 {
@@ -339,8 +339,13 @@ a {
     height: 52px;
   }
 
+  .title img {
+    height: 190px;
+  }
+
   .medium {
-    font-size: 1.125rem;
+    font-size: 1.188rem;
+    line-height: 1.6;
   }
 
   .xsmall {
