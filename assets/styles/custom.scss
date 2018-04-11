@@ -92,6 +92,10 @@ body,
 a {
   color: $green-light;
 
+  &.hovered {
+    color: $green;
+  }
+
   &:hover {
     color: $green;
   }
@@ -181,18 +185,8 @@ a {
 }
 
 .facts-list {
-  list-style: none;
+  list-style: disc;
   color: $green;
-
-  li > span:first-child::before {
-    content: "\2219";
-    font-size: 1.8em;
-    line-height: 0;
-    position: relative;
-    top: 2px;
-    padding-right: 4px;
-    color: $green;
-  }
 }
 
 .nav-tabs {
