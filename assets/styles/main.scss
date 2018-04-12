@@ -1,0 +1,168 @@
+.info-sections {
+  list-style: none;
+
+  .collapse-button {
+    position: relative;
+
+    .separator {
+      opacity: 0;
+      position: absolute;
+      bottom: 0;
+      left: -34px;
+      border-bottom: 1px solid $gray-light;
+      width: 100vw;
+    }
+
+    .arrow {
+      color: $white;
+      width: 12px;
+      height: 12px;
+
+      &.up,
+      &.down {
+        border-bottom: 2px solid;
+        border-left: 2px solid;
+      }
+
+      &.up {
+        display: inline-block;
+        vertical-align: sub;
+        transform: rotate(135deg);
+      }
+
+      &.down {
+        display: none;
+        transform: rotate(-45deg);
+      }
+    }
+
+    &.collapsed {
+      color: $green-light;
+
+      .separator {
+        transition: all .5s ease-in-out;
+        opacity: 1;
+      }
+
+      .bubble {
+        background-color: $green-light;
+      }
+
+      .btn-text {
+        color: $green-light;
+      }
+
+      .arrow {
+        &.down {
+          display: inline-block;
+        }
+        &.up {
+          display: none;
+        }
+      }
+    }
+
+    .btn-text {
+      color: $green;
+    }
+
+    .bubble {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: $green;
+    }
+  }
+}
+
+.nav-tabs {
+  position: relative;
+  transition: all .2s ease;
+
+  .underbar{
+    position: absolute;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background: $green;
+    transition: 0.5s ease;
+  }
+
+  .nav-item.show .nav-link,
+  .nav-link {
+    color: $green-light;
+    border: 0;
+
+    &:hover,
+    &.active {
+      color: $green;
+    }
+  }
+
+  li {
+    transition: 0.5s ease;
+
+    &:nth-of-type(1) {
+      &.active {
+        ~ .underbar {
+          left: 0;
+          width: 105px;
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      &.active {
+        ~ .underbar {
+          left: 138px;
+          width: 85px;
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      &.active {
+        ~ .underbar {
+          left: 255px;
+          width: 98px;
+        }
+      }
+    }
+
+    @include media-breakpoint-up(xl) {
+      &:nth-of-type(1) {
+        &.active {
+          ~ .underbar {
+            width: 135px;
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        &.active {
+          ~ .underbar {
+            left: 169px;
+            width: 105px;
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        &.active {
+          ~ .underbar {
+            left: 310px;
+            width: 125px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include media-breakpoint-up(md) {
+  .bg-building {
+    min-height: 100%;
+    background: url("/images/image_land.png") no-repeat bottom right;
+    background-size: 57vw;
+  }
+}

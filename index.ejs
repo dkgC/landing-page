@@ -26,16 +26,17 @@
 
   <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
   <link rel="shortcut icon" type="image/png" href="<%= require("./assets/images/favicon.png") %>" />
+
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-<div class="wrapper d-md-flex flex-md-column">
+<div class="bg-building d-md-flex flex-md-column">
   <header class="header flex justify-content-start">
-    <img class="logo ml-2 ml-md-4" alt="sova logo" src=<%= require("./assets/images/logo.svg") %>>
+    <a href="/"><img class="logo ml-2 ml-md-4" alt="sova logo" src=<%= require("./assets/images/logo.svg") %>></a>
   </header>
   <main class="content row px-md-5 mx-md-1">
     <div class="col-12 col-md-8 px-5 px-md-1 mt-md-5 pt-lg-5">
-      <h1 class="h2 title text-grey mb-md-5 pb-md-3"><img src=<%= require("./assets/images/SOVA_Capital_Tagline.svg")%>></h1>
+      <h1 class="title text-gray mb-md-5 pb-md-3"><img src=<%= require("./assets/images/SOVA_Capital_Tagline.svg")%>></h1>
 
       <!-- START: Accordion section -->
       <ul class="info-sections list-group f-light d-md-none">
@@ -57,8 +58,8 @@
           </button>
           <div class="collapse small text-gray-dark" id="whoWeAre">
             <p>SOVA Capital Limited (formerly Otkritie Capital International Limited or
-              <a href="http://www.otkritie-capital.com" target="_blank">OCIL</a>) is the FCA authorised and
-              UK based broker-dealer subsidiary of the ROSSIUM Group,
+              <a href="http://www.otkritie-capital.com" target="_blank">OCIL</a>) is the UK based and
+              FCA authorised broker-dealer subsidiary of the ROSSIUM Group,
               one of the largest private financial groups in Central & Eastern Europe.</p>
             <p>Headquartered in London and specialising in emerging markets with a particular focus on Russia, SOVA
               Capital offers institutional and corporate clients a full range of investment banking services, including
@@ -87,7 +88,7 @@
             <div class="separator"></div>
           </button>
           <div class="collapse small text-gray-dark" id="keyFacts">
-            <ul class="facts-list pl-3">
+            <ul class="list pl-3">
               <li>
                 <span class="text-gray-dark">FCA authorised since 2004, and offering protection of client money and
                   safe custody assets in line with FCA rules and principals and the Client Money Sourcebook (“CASS”)
@@ -145,7 +146,7 @@
               all angles and points of view, being focused, strong and stable.
             </div>
 
-            <ul class="facts-list pl-3">
+            <ul class="list pl-3">
               <li>
                 <span>Sense</span>
                 <span class="text-gray-dark"> — we understand what it is we do and why</span>
@@ -198,8 +199,8 @@
         <div class="tab-content text-gray-dark f-light medium mt-4 w-75">
           <div role="tabpanel" class="tab-pane active" id="whoWeAreTab">
             <p>SOVA Capital Limited (formerly Otkritie Capital International Limited or
-              <a href="http://www.otkritie-capital.com" target="_blank">OCIL</a>) is the FCA authorised and
-              UK based broker-dealer subsidiary of the ROSSIUM Group,
+              <a href="http://www.otkritie-capital.com" target="_blank">OCIL</a>) is the UK based and
+              FCA authorised broker-dealer subsidiary of the ROSSIUM Group,
               one of the largest private financial groups in Central & Eastern Europe.</p>
             <p>Headquartered in London and specialising in emerging markets with a particular focus on Russia, SOVA
               Capital offers institutional and corporate clients a full range of investment banking services, including
@@ -210,7 +211,7 @@
               personnel.</p>
           </div>
           <div role="tabpanel" class="tab-pane" id="keyFactsTab">
-            <ul class="facts-list pl-3">
+            <ul class="list pl-3">
               <li>
                 <span class="text-gray-dark">FCA authorised since 2004, and offering protection of client money and
                   safe custody assets in line with FCA rules and principals and the Client Money Sourcebook (“CASS”)
@@ -250,7 +251,7 @@
               all angles and points of view, being focused, strong and stable.
             </div>
 
-            <ul class="facts-list pl-3">
+            <ul class="list pl-3">
               <li>
                 <span>Sense</span>
                 <span class="text-gray-dark"> — we understand what it is we do and why</span>
@@ -290,9 +291,9 @@
             Phone: <a class="text-gray-darker" href="tel:+4402078268200">+44 (0) 20 7826 8200</a>
           </div>
           <div>
-            Moscow Headquarters<br>
+            Moscow Branch<br>
             BC Oasis, Moscow, 119049<br>
-            7th floor, 5 Koroviy Val, bld 1<br>
+            7th floor, 5 Koroviy Val<br>
             Phone: <a class="text-gray-darker" href="tel:++74952232323">+7 (495) 223 23 23</a>
           </div>
         </div>
@@ -301,9 +302,9 @@
     <!-- END: Contact section -->
   </main>
 
-  <!-- START: Footer section -->
   <footer class="footer row px-4 px-md-5 mx-md-1">
     <div class="col-12 col-md-5 px-4 px-md-1 pb-2 pb-md-4 pt-5 pt-md-0">
+      <a class="d-block text-gray small" href="/terms.html">Terms of Business and Financial Regulators</a>
       <a class="contact-email f-semi-bold small hovered" href="mailto:info@sovacapital.com">Email: info@sovacapital.com</a>
       <div class="disclaimer pt-2 pt-md-3">
         Unless specifically stated, this notice is for information purposes only and may not be
@@ -313,7 +314,6 @@
       </div>
     </div>
   </footer>
-  <!-- END: Footer section -->
 </div>
 </body>
 </html>

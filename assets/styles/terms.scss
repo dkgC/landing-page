@@ -1,0 +1,10 @@
+@include media-breakpoint-up(md) {
+  .section {
+    width: 75%;
+  }
+
+  .bg-ben {
+    background: url("/images/ben.png") no-repeat fixed bottom right;
+    background-size: 35%;
+  }
+}

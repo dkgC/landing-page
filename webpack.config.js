@@ -14,6 +14,17 @@ const WEBSITE = 'http://sovacapital.com/';
 const DESCRIPTION = `SOVA Capital Limited is a leading independent Russian broker, offering institutional and 
 corporate clients a full range of investment banking services.`;
 const TITLE = 'SOVA Capital Limited';
+
+const HTML_WEBPACK_PLUGIN_OPTIONS = {
+  title: TITLE,
+  description: DESCRIPTION,
+  website_url: WEBSITE,
+  minify: {
+    collapseWhitespace: true
+  },
+};
+
+
 /**
  * Webpack Configuration
  */
@@ -29,18 +40,29 @@ module.exports = {
     ]
   },
   plugins: [
+    new webpack.ProvidePlugin({
+      _: "underscore",
+    }),
+    // index.html
     new HtmlWebpackPlugin({
-      template: path.join(__dirname, 'index.ejs'),
-      title: TITLE,
-      description: DESCRIPTION,
-      website_url: WEBSITE,
-      minify: {
-        collapseWhitespace: true
-      }
+      template: 'ejs-loader!index.ejs',
+      ...HTML_WEBPACK_PLUGIN_OPTIONS,
+    }),
+    // terms.html
+    new HtmlWebpackPlugin({
+      filename: 'terms.html',
+      template: 'ejs-loader!templates/terms.ejs',
+      ...HTML_WEBPACK_PLUGIN_OPTIONS,
     }),
     new ExtractTextPlugin('styles.[hash].css')
   ],
   module: {
+    loaders: [
+      {
+        test: /\.ejs$/,
+        loader: 'ejs-loader?variable=data'
+      },
+    ],
     rules: [
       {
         test: /\.(jpe?g|png|gif|svg)$/i,
@@ -74,5 +96,5 @@ module.exports = {
         })
       },
     ]
-  }
+  },
 };

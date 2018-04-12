@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Open Graph data -->
+  <meta property="og:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="http://www.sovacapital.com/" />
+  <meta property="og:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("../assets/images/fb_share.png") %>">
+  <meta property="og:description" content="<%= htmlWebpackPlugin.options.description %>">
+
+  <!-- Twitter Card data -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta name="twitter:description" content="<%= htmlWebpackPlugin.options.description %>">
+  <meta name="twitter:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("../assets/images/twitter_share.png") %>">
+
+  <!-- VK data -->
+  <meta property="vk:title" content="<%= htmlWebpackPlugin.options.title %>">
+  <meta property="vk:description" content="<%= htmlWebpackPlugin.options.description %>">
+  <meta property="vk:url" content="http://www.sovacapital.com/">
+  <meta property="vk:image" content="<%= htmlWebpackPlugin.options.website_url %><%= require("../assets/images/vk_share.png") %>">
+
+  <meta name="description" content="<%= htmlWebpackPlugin.options.description %>">
+  <link rel="shortcut icon" type="image/png" href="<%= require("../assets/images/favicon.png") %>" />
+
+  <title><%= htmlWebpackPlugin.options.title %></title>
+</head>
+<body>
+<div class="bg-ben d-md-flex flex-md-column">
+  <header class="header flex justify-content-start">
+    <a href="/"><img class="logo ml-2 ml-md-4" alt="sova logo" src=<%= require("../assets/images/logo.svg") %>></a>
+  </header>
+
+  <main class="content row px-md-5 mx-md-1">
+    <div class="col-12 col-md-8 px-5 px-md-1 mt-md-5 pt-lg-5">
+      <h1 class="title f-ult-light text-gray mb-4 mb-md-5 pb-md-3">terms of business<br> and financial regulations</h1>
+
+      <!-- START: Notification headline -->
+      <h2 class="h3 headline f-semi-bold text-green my-3">Notification</h2>
+      <!-- END: Notification headline -->
+
+      <!-- START: Notifications -->
+      <section>
+        <div class="xsmall text-gray">20.03.2008</div>
+        <div class="small f-semi-bold text-gray-dark my-2">
+          Notification regarding changes to Terms of Business Updates on our New Company Name
+        </div>
+        <div class="small text-gray-dark f-light">
+          <p>
+            <span class="d-block f-semi-bold">Dear Client</span>
+            Further to our recent communication regarding to changing of the company’s name from Otkritie Capital
+            International Limited to Sova Capital Limited, please be informed that we have updated Terms of Business for
+            Professional Clients version A (“Terms of Business A”), Terms of Business for Professional Clients version
+            B, Terms of Business for Professional Clients version C on our website to reflect this change.
+          </p>
+          <p>
+            Please note that all references to Otkritie Capital International Limited Terms of Business (A, B or C as
+            applicable) in the Fees and Commission Schedule and other documents that have been executed between you and
+            us in relation thereto, shall be deemed to be references to Sova Capital Limited Terms of Business for
+            Professional Clients (A, B or C as applicable).
+          </p>
+          <p>
+            If you have any questions regarding change of name, please contact your Sales Representative or CRM or write
+            to <a href="mailto:TOB_SCL@sovacapital.com">TOB_SCL@sovacapital.com</a> or call to
+            <a href="tel:+442078268287">+44 207 826 82 87</a> (London direct number) or
+            <a href="tel:+7 495 735 40 65">+7 495 735 40 65</a> (Moscow direct number), whichever is more convenient to
+            you.
+          </p>
+          <p>
+            The Terms of Business ("ToB") that will apply to transactions concluded between Sova Capital Limited and
+            you, will be one of the followings, "Terms of Business A (4.0)" ("ToB A") or "Terms of Business B (4.0)"
+            ("ToB B") "Terms of Business C (2.0)" ("ToB C"), depending on which services you would like to receive
+            from Sova Capital Limited. Each ToB:
+          </p>
+
+          <ul class="list pl-3">
+            <li><span class="text-gray-dark">relates to different services;</span></li>
+            <li><span class="text-gray-dark">provides a different level of protection for your assets;</span></li>
+            <li><span class="text-gray-dark">may include differing fees.</span></li>
+          </ul>
+
+          <p>
+            Copies of each version ToB A, ToB B and ToB C can be viewed below. Please contact us so we can advise you
+            which ToB we would typically use for the specific services you require. For further details on the terms
+            contained in the ToB, please see our FAQs and General Information sections of this website. If you have any
+            questions at this stage, please contact us using the details provided in the Contact Details section.
+          </p>
+        </div>
+      </section>
+      <!-- END: Notifications -->
+
+      <!-- START: TOB and FR headline -->
+      <h2 class="h3 headline f-semi-bold text-green my-3">Terms of Business and Financial Regulations</h2>
+      <!-- END: TOB and FR headline -->
+
+      <!-- START: TOBs and FRs -->
+      <section>
+        <div class="section-title medium f-semi-bold text-green mb-3">Terms of Business</div>
+        <ul class="small list pl-3">
+          <li>
+            <a class="text-gray-dark"
+              href="http://www.otkritie-capital.com/common/img/uploaded/PDF-files1/osl/ToB_A-4.0-march.pdf"
+              target="_blank">
+              Terms of Business A (4.0)
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-dark"
+               href="http://www.otkritie-capital.com/common/img/uploaded/PDF-files1/osl/ToB_B-4.0-march.pdf"
+               target="_blank">
+              Terms of Business B (4.0)
+            </a>
+          </li>
+          <li>
+            <a class="text-gray-dark"
+               href="http://www.otkritie-capital.com/common/img/uploaded/PDF-files1/osl/ToB_C-4.0-march-upd.pdf"
+               target="_blank">
+              Terms of Business C (2.0)
+            </a>
+          </li>
+        </ul>
+      </section>
+      <!-- END: TOBs and FRs -->
+    </div>
+  </main>
+
+  <footer class="footer row px-4 px-md-5 mx-md-1">
+    <div class="col-12 col-md-5 px-4 px-md-1 pb-2 pb-md-4 pt-5 pt-md-0">
+      <a class="d-block text-gray small" href="http://www.otkritie-capital.com/en/tob/archive/" target="_blank">Archive</a>
+      <a class="contact-email f-semi-bold small hovered" href="mailto:info@sovacapital.com">Email: info@sovacapital.com</a>
+      <div class="disclaimer pt-2 pt-md-3">
+        Unless specifically stated, this notice is for information purposes only and may not be
+        considered as advice, is not an offer, recommendation or solicitation with respect to any transaction or an
+        advertisement, nor is it an official confirmation of terms and does not form a fiduciary relationship.
+        Additional information is available upon request.
+      </div>
+    </div>
+  </footer>
+
+  <img class="image w-100 h-100 d-md-none" alt="ben" src=<%= require("../assets/images/ben.png") %>>
+</div>
+</body>
+</html>

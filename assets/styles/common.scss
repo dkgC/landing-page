@@ -1,0 +1,159 @@
+.logo {
+  width: 196px;
+}
+
+.title img {
+  height: 55px;
+}
+
+.f-hairline {
+  font-family: "Montserrat Hairline";
+}
+
+.f-ult-light {
+  font-family: "Montserrat Ultra";
+}
+
+.f-light {
+  font-family: "Montserrat Light";
+}
+
+.f-regular {
+  font-family: "Montserrat";
+}
+
+.f-bold {
+  font-family: "Montserrat Bold";
+}
+
+.f-semi-bold {
+  font-family: "Montserrat Semi";
+}
+
+.text-green {
+  color: $green;
+}
+
+.text-green-light {
+  color: $green-light;
+}
+
+.text-gray {
+  color: $gray;
+}
+
+.text-gray-darker {
+  color: $gray-darker;
+}
+
+.text-gray-dark {
+  color: $gray-dark;
+}
+
+.xsmall {
+  font-size: 0.563rem;
+}
+
+.disclaimer {
+  color: $gray-darker;
+  font-size: 0.375rem;
+}
+
+.image {
+  margin-top: 12px;
+}
+
+.list {
+  list-style: disc;
+  color: $green;
+}
+
+a {
+  color: $green-light;
+
+  &.hovered {
+    color: $green;
+  }
+
+  &:hover {
+    color: $green;
+  }
+}
+
+.btn-link {
+  &, &:hover, &:focus {
+    text-decoration: none;
+  }
+}
+
+@include media-breakpoint-up(md) {
+  body {
+    height: 100vh;
+    font-size: 18px;
+  }
+
+  .contact-email {
+    font-size: 0.7em;
+  }
+
+  .disclaimer {
+    color: $gray;
+    font-size: 0.5rem;
+  }
+
+  .logo {
+    width: 300px;
+  }
+
+  .title {
+    font-size: 3.875rem;
+    line-height: 1.1;
+
+    img {
+      height: 105px;
+    }
+  }
+
+  .header {
+    height: 60px;
+  }
+
+  .content {
+    flex-grow: 1;
+  }
+
+  .medium {
+    font-size: 0.875rem;
+  }
+}
+
+@include media-breakpoint-up(xl) {
+  body {
+    font-size: 24px;
+  }
+
+  .header {
+    height: 52px;
+  }
+
+  .title {
+    font-size: 6.250rem;
+
+    img {
+      height: 190px;
+    }
+  }
+
+  .medium {
+    font-size: 1.188rem;
+    line-height: 1.6;
+  }
+
+  .xsmall {
+    font-size: 1rem;
+  }
+
+  .disclaimer {
+    font-size: 0.875rem;
+  }
+}

@@ -13,5 +13,5 @@ function handleTabClick(e) {
 
 export function initTabBar() {
   const tabBar = document.querySelector(NAV_TABS_SELECTOR);
-  tabBar.addEventListener('click', handleTabClick)
+  tabBar && tabBar.addEventListener('click', handleTabClick)
 }
