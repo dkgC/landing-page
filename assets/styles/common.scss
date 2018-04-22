@@ -61,6 +61,11 @@
 
 .image {
   margin-top: 12px;
+
+  &-symbol {
+    height: 9px;
+    vertical-align: baseline;
+  }
 }
 
 .list {
@@ -125,6 +130,12 @@ a {
   .medium {
     font-size: 0.875rem;
   }
+
+  .image {
+    &-symbol {
+      height: 10px;
+    }
+  }
 }
 
 @include media-breakpoint-up(xl) {
@@ -155,5 +166,11 @@ a {
 
   .disclaimer {
     font-size: 0.875rem;
+  }
+
+  .image {
+    &-symbol {
+      height: 13px;
+    }
   }
 }

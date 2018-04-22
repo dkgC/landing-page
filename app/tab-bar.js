@@ -2,7 +2,7 @@ const NAV_TABS_SELECTOR = '.nav-tabs';
 
 function handleTabClick(e) {
   const target = e.target.closest('li');
-  if (target && !target.classList.contains('active')) {
+  if (target && !target.classList.contains('active') && !target.getAttribute('data-no-change')) {
     const tabBar = target.closest(NAV_TABS_SELECTOR);
     const allTabs = tabBar.querySelectorAll('li');
 

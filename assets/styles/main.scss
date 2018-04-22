@@ -129,6 +129,19 @@
       }
     }
 
+    &:nth-of-type(4) {
+      position: absolute;
+      left: 370px;
+      width: 100%;
+    }
+
+    @include media-breakpoint-up(lg) {
+      &:nth-of-type(4) {
+        position: static;
+        width: auto;
+      }
+    }
+
     @include media-breakpoint-up(xl) {
       &:nth-of-type(1) {
         &.active {
