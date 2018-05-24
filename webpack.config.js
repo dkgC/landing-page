@@ -65,7 +65,7 @@ module.exports = {
     ],
     rules: [
       {
-        test: /\.(jpe?g|png|gif|svg)$/i,
+        test: /\.(pdf|jpe?g|png|gif|svg)$/i,
         exclude: /node_modules/,
         loader: 'file-loader?limit=1024&name=images/[name].[ext]'
       },
